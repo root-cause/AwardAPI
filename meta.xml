@@ -1,0 +1,33 @@
+<meta>
+    <info name="AwardAPI" author="rootcause" type="script" />
+
+    <!-- Files -->
+    <script src="AwardAPI.cs" type="server" lang="csharp" />
+    <script src="AwardAPI.js" type="client" lang="javascript" />
+
+    <!-- Exported Methods (Award) -->
+    <export class="AwardAPI" function="CreateAward" />
+    <export class="AwardAPI" function="IsIDInUse" />
+    <export class="AwardAPI" function="GetAllAwardIDs" />
+    <export class="AwardAPI" function="GetAwardName" />
+    <export class="AwardAPI" function="GetAwardDescription" />
+    <export class="AwardAPI" function="GetAwardRequiredProgress" />
+
+    <!-- Exported Methods (Player) -->
+    <export class="AwardAPI" function="InitPlayer" />
+    <export class="AwardAPI" function="GiveAwardProgress" />
+    <export class="AwardAPI" function="SetAwardProgress" />
+    <export class="AwardAPI" function="GetAwardProgress" />
+    <export class="AwardAPI" function="RemoveAward" />
+    <export class="AwardAPI" function="RemoveAllAwards" />
+    <export class="AwardAPI" function="IsAwardUnlocked" />
+    <export class="AwardAPI" function="GetAwardUnlockDate" />
+    <export class="AwardAPI" function="LockAward" />
+    <export class="AwardAPI" function="UnlockAward" />
+
+    <!-- Exported Events -->
+    <export class="AwardAPI" event="OnPlayerUnlockAward" />
+
+    <!-- Libraries -->
+    <assembly ref="Newtonsoft.Json.dll" />
+</meta>
